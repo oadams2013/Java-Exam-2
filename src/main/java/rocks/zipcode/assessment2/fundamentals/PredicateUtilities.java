@@ -45,8 +45,11 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of `multiple`
      */
     public static Boolean isMultipleOfN(Integer value, Integer multiple) {
-        return null;
+        return value % multiple == 0;
     }
+
+
+
 
     /**
      * @param string - the string to be evaluated
