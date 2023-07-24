@@ -19,7 +19,7 @@ public class AnimalConstructorTest {
         Long expectedId = null;
 
         // when
-        Animal animal = new Animal();
+        Animal animal = new Animal(expectedId, expectedOwner);
         Person actualOwner = animal.getOwner();
         Address actualAddress = animal.getAddress();
         Long actualId = animal.getId();

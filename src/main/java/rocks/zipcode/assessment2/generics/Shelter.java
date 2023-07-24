@@ -31,7 +31,7 @@ public class Shelter<_> {
     }
 
     public Object get(Integer index) {
-        return null;
+        return index;
     }
 
     public Integer getIndexOf(Object ageable) {
