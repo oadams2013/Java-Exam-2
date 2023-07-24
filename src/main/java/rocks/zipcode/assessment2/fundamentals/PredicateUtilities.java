@@ -7,7 +7,7 @@ public class PredicateUtilities {
      */
     public static Boolean isEven(Integer value) {
 
-        return null;
+        return value % 2 == 0;
     }
 
     /**
@@ -15,7 +15,8 @@ public class PredicateUtilities {
      * @return true if `value` is not a multiple of 2
      */
     public static Boolean isOdd(Integer value) {
-        return null;
+
+        return value % 2 !=0;
     }
 
     /**
@@ -56,6 +57,10 @@ public class PredicateUtilities {
      * @return true if `string` starts with a capital letter
      */
     public static Boolean startsWithCapitalLetter(String string) {
-        return null;
+        if (string == null || string.isEmpty()){
+            return false;
+        } char firstLetter = string.charAt(0);
+
+        return Character.isUpperCase(firstLetter);
     }
 }
