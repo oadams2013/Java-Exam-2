@@ -6,11 +6,8 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of 2
      */
     public static Boolean isEven(Integer value) {
-        Integer number = 0;
-        for (int i = 0; i < ; i++) {
-            
-        }
-        return true;
+
+        return null;
     }
 
     /**
@@ -26,7 +23,19 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of 3
      */
     public static Boolean isMultipleOf3(Integer value) {
-        return null;
+        while (value > 9) {
+            int sum = 0;
+            while (value > 0) {
+                sum += value % 10;
+                value /= 10;
+            }
+            value = sum;
+        }
+        if (value % 3 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
