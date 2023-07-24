@@ -11,7 +11,12 @@ public class StringArrayUtils {
      * @return an array with all elements between `startingIndex` and `endingIndex`
      */
     public static String[] getSubArray(String[] arrayToBeSpliced, int startingIndex, int endingIndex) {
-        return null;
+        int stuff = endingIndex - startingIndex ;
+        String[] getSliced = new String[stuff];
+        for (int i =0; i < stuff;i++){
+            getSliced[i] = arrayToBeSpliced[startingIndex + 1];
+        }
+        return getSliced ;
     }
 
 

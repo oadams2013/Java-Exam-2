@@ -7,7 +7,8 @@ public class BasicStringUtils {
      * @return concatenation of `string1` and `string2`
      */
     public static String concatentate(String string1, String string2) {
-        return null;
+
+        return string1 + string2;
     }
 
     /**
@@ -15,7 +16,14 @@ public class BasicStringUtils {
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+        char c;
+        String s = "";
+        for (int i = 0; i < string1.length(); i++) {
+            c = string1.charAt(i);
+            s = c + s;
+
+        }
+        return s;
     }
 
     /**
@@ -24,7 +32,20 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+        char c;
+        String s = "";
+        for (int i = 0; i < string1.length(); i++) {
+            c= string1.charAt(i);
+            s = c + s;
+
+        } char o;
+        String t = "";
+        for (int i = 0; i < string2.length() ; i++) {
+            o = string2.charAt(i);
+            t = o + t;
+
+        }
+        return s + t;
     }
 
     /**
@@ -33,7 +54,14 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
+    StringBuilder stuff = new StringBuilder();
+        for (char c : string.toCharArray()) {
+            if(charactersToRemove.indexOf(c) == -1){
+                stuff.append(c);
+            }
+
+        }
+        return stuff.toString();
     }
 
     /**
@@ -42,6 +70,15 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        return null;
-    }
+        StringBuilder stuff = new StringBuilder();
+        for (char c : string.toCharArray()) {
+            if(charactersToRemove.indexOf(c) == -1){
+                stuff.append(c);
+            }
+
+        }
+        return stuff.toString();
+
+    } char m;
+    return null;
 }
