@@ -8,14 +8,14 @@ import rocks.zipcode.assessment2.objectorientation.Person;
  * @ATTENTION_TO_STUDENTS - Ensure that you have completed the `Person` class before attempting this class.
  */
 public class Animal {
-    public Animal(){
 
-    }
     private Long id;
     private Person owner;
     private Address address;
 
+    public Animal(){
 
+    }
     /**
      * @param id - id of animal
      * @param owner - owner of animal
