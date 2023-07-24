@@ -70,15 +70,16 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        StringBuilder stuff = new StringBuilder();
-        for (char c : string.toCharArray()) {
+        StringBuilder stuff = new StringBuilder(string).reverse();
+        StringBuilder anotherOne = new StringBuilder();
+
+        for (char c : stuff.toString().toCharArray()) {
             if(charactersToRemove.indexOf(c) == -1){
-                stuff.append(c);
+                anotherOne.append(c);
             }
 
         }
-        return stuff.toString();
+        return anotherOne.toString();
 
-    } char m;
-    return null;
+    }
 }
